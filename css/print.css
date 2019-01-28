@@ -1,0 +1,6 @@
+@media print {    
+  .no-print, .no-print * {
+     /*display: none !important;	*/	/*!important is only given to overwrite cascading effect	*/ 
+     visibility: hidden;
+    }
+}

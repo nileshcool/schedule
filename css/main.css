@@ -1,0 +1,104 @@
+/* *{} - for everything apply the rule
+* #id - id selector from CSS2
+* .class - class selctor from CSS3
+* selector[attribute] or selector[attribute="value"] - from CSS3, p[name="bucky"]{color:blue;}
+* even supports regullar expression, like ^(start), $(stop), *(any)
+* element:nth-child(){}, examp: p:nth-child(even){color:green;} or p:nth-child(4n+1){}
+* :not(.bucky){color:red;} - negation class
+* special charaters: >, +, ~
+*/
+
+*{
+	margin:0px;
+	padding:0px;
+}
+header, nav, section, article, hgroup, aside, footer{
+	display:block;
+}
+body{
+/*	border: 1px solid black;
+	width:1000px;
+	margin:20px auto;	*/
+}
+#sitehead{
+	background:yellow;
+	border: 1px solid black;
+	padding:10px;
+}
+
+/*Navigation menu styling starts here*/
+nav{
+	text-align:left;
+	background:blue;
+	color:white;
+}
+nav li{
+	display:inline-block;
+	list-style:none;
+	padding:5px;
+	font: bold 14px tahoma;
+}
+/*Navigation menu styling ends here*/
+#content{
+	float:left;
+	width:660px;
+	margin:30px;
+	text-align:left;
+}
+aside{
+	float:left;
+	width:220px;
+	margin:20px 0;
+	padding:30px;
+	background:#66cccc;
+}
+article{
+}
+article > footer{
+	text-align:right;
+}
+#sitefoot{
+	clear:both;
+	text-align:center;
+	padding:20px;
+	border-top: 2px solid green;
+}
+
+/*from http://rickharrison.github.io/validate.js/ */
+.success_box {
+	background: #E2F1BB;
+	border: 1px solid #598800;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #000000;
+	display: inline;
+/*	font-size: 13px;
+	margin: 0px 0px 15px 0px;
+	padding: 8px 8px;
+	width: 672px;	*/
+}
+.error_box {
+	background: #C30D0D;
+	border: 1px solid #FF0B0B;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #00F0F0;
+	display: inline;
+}
+.warrning_box {
+	background: #FBCD06;
+	border: 1px solid #1A1B1C;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #000000;
+	display: inline;
+}
+
+/* End of import session */
+
+.center {
+text-align: center;
+}
